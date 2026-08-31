@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AarogyaAI – Rural Healthcare Assistant</title>
+  <meta name="description"
+    content="AarogyaAI empowers rural patients with AI-powered prescription reading, voice assistance, and medicine reminders." />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Noto+Sans+Devanagari:wght@400;600;700&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <!-- ── NAVBAR ── -->
+  <header class="navbar" id="navbar">
+    <div class="nav-inner">
+      <div class="logo">
+        <div class="logo-icon">
+          <i class="fa-solid fa-leaf"></i>
+          <i class="fa-solid fa-plus logo-plus"></i>
+        </div>
+        <span class="logo-text">Aarogya<span class="logo-ai">AI</span></span>
+      </div>
+      <nav class="nav-links">
+        <a href="#home" class="nav-link active" data-section="home"><i class="fa-solid fa-house"></i> Home</a>
+        <a href="#upload" class="nav-link" data-section="upload"><i class="fa-solid fa-file-medical"></i> Upload</a>
+        <a href="#voice" class="nav-link" data-section="voice"><i class="fa-solid fa-microphone"></i> Voice</a>
+        <a href="#reminders" class="nav-link" data-section="reminders"><i class="fa-solid fa-bell"></i> Reminders</a>
+        <a href="#history" class="nav-link" data-section="history"><i class="fa-solid fa-clock-rotate-left"></i>
+          History</a>
+      </nav>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- ── MOBILE MENU ── -->
+  <div class="mobile-menu" id="mobile-menu">
+    <a href="#home" class="mob-link" data-section="home"><i class="fa-solid fa-house"></i> Home</a>
+    <a href="#upload" class="mob-link" data-section="upload"><i class="fa-solid fa-file-medical"></i> Upload</a>
+    <a href="#voice" class="mob-link" data-section="voice"><i class="fa-solid fa-microphone"></i> Voice</a>
+    <a href="#reminders" class="mob-link" data-section="reminders"><i class="fa-solid fa-bell"></i> Reminders</a>
+    <a href="#history" class="mob-link" data-section="history"><i class="fa-solid fa-clock-rotate-left"></i> History</a>
+  </div>
+
+  <main>
+
+    <!-- ── HERO ── -->
+    <section class="hero" id="home">
+      <div class="hero-bg-shapes">
+        <div class="shape shape-1"></div>
+        <div class="shape shape-2"></div>
+        <div class="shape shape-3"></div>
+      </div>
+      <div class="hero-content">
+        <div class="hero-badge"><i class="fa-solid fa-shield-heart"></i> AI-Powered Healthcare for Everyone</div>
+        <h1 class="hero-title">Your Health,<br /><span class="gradient-text">Simplified</span></h1>
+        <p class="hero-subtitle">Upload prescriptions, understand medicines in your language, set reminders — all
+          powered by AI. Designed especially for rural patients.</p>
+        <div class="hero-actions">
+          <a href="#upload" class="btn btn-primary btn-lg pulse-btn">
+            <i class="fa-solid fa-upload"></i> Upload Prescription
+          </a>
+          <a href="#voice" class="btn btn-outline btn-lg">
+            <i class="fa-solid fa-microphone"></i> Voice Assistant
+          </a>
+        </div>
+        <div class="hero-stats">
+          <div class="stat"><span class="stat-num" data-target="50000">0</span><span>+</span>
+            <p>Patients Helped</p>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat"><span class="stat-num" data-target="12">0</span><span>+</span>
+            <p>Languages</p>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat"><span class="stat-num" data-target="98">0</span><span>%</span>
+            <p>Accuracy</p>
+          </div>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <div class="phone-mockup">
+          <div class="phone-screen">
+            <div class="phone-header">
+              <div class="phone-dot"></div>
+              <div class="phone-dot"></div>
+              <div class="phone-dot"></div>
+            </div>
+            <div class="phone-content">
+              <div class="phone-pill"><i class="fa-solid fa-pills"></i> Paracetamol 500mg</div>
+              <div class="phone-pill"><i class="fa-solid fa-capsules"></i> Amoxicillin 250mg</div>
+              <div class="phone-check"><i class="fa-solid fa-check-circle"></i> Morning dose taken!</div>
+              <div class="phone-wave">
+                <div class="wave-bar"></div>
+                <div class="wave-bar"></div>
+                <div class="wave-bar"></div>
+                <div class="wave-bar"></div>
+                <div class="wave-bar"></div>
+                <div class="wave-bar"></div>
+                <div class="wave-bar"></div>
+                <div class="wave-bar"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── FEATURE CARDS ── -->
+    <section class="features-strip" id="features">
+      <div class="container">
+        <div class="features-grid">
+          <div class="feat-card" data-delay="0">
+            <div class="feat-icon"><i class="fa-solid fa-camera-retro"></i></div>
+            <h3>OCR Extraction</h3>
+            <p>Instantly reads text from any prescription photo</p>
+          </div>
+          <div class="feat-card" data-delay="100">
+            <div class="feat-icon"><i class="fa-solid fa-language"></i></div>
+            <h3>Local Language</h3>
+            <p>Medicine instructions in Hindi, Telugu, Tamil & more</p>
+          </div>
+          <div class="feat-card" data-delay="200">
+            <div class="feat-icon"><i class="fa-solid fa-bell"></i></div>
+            <h3>Smart Reminders</h3>
+            <p>Never miss a dose with intelligent medicine alerts</p>
+          </div>
+          <div class="feat-card" data-delay="300">
+            <div class="feat-icon"><i class="fa-solid fa-ear-listen"></i></div>
+            <h3>Voice Guidance</h3>
+            <p>Hear your instructions — ideal for low-literacy users</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── UPLOAD SECTION ── -->
+    <section class="section" id="upload">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-tag"><i class="fa-solid fa-file-medical"></i> Prescription</div>
+          <h2>Upload & Extract</h2>
+          <p>Take a photo or upload your prescription — our AI reads it instantly</p>
+        </div>
+        <div class="upload-grid">
+          <!-- Drop Zone -->
+          <div class="upload-card">
+            <div class="drop-zone" id="drop-zone">
+              <div class="drop-icon">
+                <i class="fa-solid fa-cloud-arrow-up"></i>
+              </div>
+              <p class="drop-title">Drag & Drop Prescription</p>
+              <p class="drop-sub">or click to browse</p>
+              <input type="file" id="file-input" accept="image/*" hidden />
+              <button class="btn btn-primary" id="choose-btn"><i class="fa-solid fa-folder-open"></i> Choose
+                Image</button>
+              <p class="drop-hint"><i class="fa-solid fa-shield-check"></i> Supports JPG, PNG, WEBP — max 10MB</p>
+            </div>
+            <div class="preview-box hidden" id="preview-box">
+              <img id="preview-img" src="" alt="Prescription preview" />
+              <div class="preview-overlay">
+                <button class="btn btn-sm btn-white" id="reupload-btn"><i class="fa-solid fa-rotate"></i>
+                  Change</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- OCR Result -->
+          <div class="ocr-card" id="ocr-card">
+            <div class="ocr-empty" id="ocr-empty">
+              <i class="fa-solid fa-file-waveform"></i>
+              <p>Upload a prescription to see extracted medicines here</p>
+            </div>
+            <div class="ocr-result hidden" id="ocr-result">
+              <div class="ocr-header">
+                <h3><i class="fa-solid fa-wand-magic-sparkles"></i> AI Extraction Results</h3>
+                <div class="ocr-actions">
+                  <button class="btn btn-sm btn-primary" id="read-aloud-btn"><i class="fa-solid fa-volume-high"></i>
+                    Read Aloud</button>
+                  <button class="btn btn-sm btn-outline" id="save-rx-btn"><i class="fa-solid fa-floppy-disk"></i>
+                    Save</button>
+                </div>
+              </div>
+              <div class="patient-info-box" id="patient-info"></div>
+              <div class="medicines-list" id="medicines-list"></div>
+              <div class="instruction-box">
+                <h4><i class="fa-solid fa-circle-info"></i> Simplified Instructions</h4>
+                <div id="simplified-instructions"></div>
+              </div>
+              <div class="lang-selector">
+                <label><i class="fa-solid fa-globe"></i> Read in:</label>
+                <select id="lang-select">
+                  <option value="en-IN">English</option>
+                  <option value="hi-IN">हिंदी (Hindi)</option>
+                  <option value="te-IN">తెలుగు (Telugu)</option>
+                  <option value="ta-IN">தமிழ் (Tamil)</option>
+                  <option value="kn-IN">ಕನ್ನಡ (Kannada)</option>
+                  <option value="mr-IN">मराठी (Marathi)</option>
+                </select>
+              </div>
+            </div>
+            <!-- Loading State -->
+            <div class="ocr-loading hidden" id="ocr-loading">
+              <div class="ai-loader">
+                <div class="ai-ring"></div>
+                <i class="fa-solid fa-brain"></i>
+              </div>
+              <p>AI is reading your prescription...</p>
+              <div class="loading-steps">
+                <div class="lstep active" id="ls1"><i class="fa-solid fa-check"></i> Image uploaded</div>
+                <div class="lstep" id="ls2"><i class="fa-solid fa-spinner fa-spin"></i> Extracting text...</div>
+                <div class="lstep" id="ls3"><i class="fa-regular fa-circle"></i> Simplifying instructions</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="upload-cta">
+          <button class="btn btn-primary btn-xl" id="analyze-btn" disabled>
+            <i class="fa-solid fa-magnifying-glass"></i> Analyze Prescription
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── VOICE ASSISTANT ── -->
+    <section class="section section-alt" id="voice">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-tag"><i class="fa-solid fa-microphone"></i> Voice</div>
+          <h2>Voice Assistant</h2>
+          <p>Ask about your medicines in your own language — no reading required</p>
+        </div>
+        <div class="voice-grid">
+          <div class="voice-main-card">
+            <div class="voice-orb-wrapper">
+              <div class="voice-orb" id="voice-orb">
+                <div class="orb-ring orb-ring-1"></div>
+                <div class="orb-ring orb-ring-2"></div>
+                <div class="orb-ring orb-ring-3"></div>
+                <button class="orb-btn" id="mic-btn" aria-label="Start voice assistant">
+                  <i class="fa-solid fa-microphone" id="mic-icon"></i>
+                </button>
+              </div>
+            </div>
+            <div class="voice-status-area">
+              <div class="voice-status" id="voice-status">
+                <i class="fa-solid fa-circle-dot status-dot"></i>
+                <span id="status-text">Tap the mic to start</span>
+              </div>
+              <div class="voice-transcript" id="voice-transcript" aria-live="polite">
+                <p class="transcript-placeholder">Your speech will appear here...</p>
+              </div>
+              <div class="voice-response" id="voice-response" aria-live="polite"></div>
+            </div>
+            <div class="voice-lang-picker">
+              <p><i class="fa-solid fa-language"></i> Speak in:</p>
+              <div class="lang-pills">
+                <button class="lang-pill active" data-lang="en-IN" data-label="English">EN</button>
+                <button class="lang-pill" data-lang="hi-IN" data-label="हिंदी">HI</button>
+                <button class="lang-pill" data-lang="te-IN" data-label="Telugu">TE</button>
+                <button class="lang-pill" data-lang="ta-IN" data-label="Tamil">TA</button>
+                <button class="lang-pill" data-lang="kn-IN" data-label="Kannada">KN</button>
+                <button class="lang-pill" data-lang="mr-IN" data-label="Marathi">MR</button>
+              </div>
+            </div>
+          </div>
+          <div class="voice-tips-card">
+            <h3><i class="fa-solid fa-lightbulb"></i> Try saying...</h3>
+            <div class="tip-list">
+              <div class="tip-item" onclick="setVoiceExample(this)">
+                <i class="fa-solid fa-pills"></i>
+                <p>"When should I take Paracetamol?"</p>
+              </div>
+              <div class="tip-item" onclick="setVoiceExample(this)">
+                <i class="fa-solid fa-clock"></i>
+                <p>"Set reminder for my morning medicines"</p>
+              </div>
+              <div class="tip-item" onclick="setVoiceExample(this)">
+                <i class="fa-solid fa-triangle-exclamation"></i>
+                <p>"What are the side effects of Amoxicillin?"</p>
+              </div>
+              <div class="tip-item" onclick="setVoiceExample(this)">
+                <i class="fa-solid fa-utensils"></i>
+                <p>"Should I take medicine before or after food?"</p>
+              </div>
+            </div>
+            <div class="voice-history-mini" id="voice-history-mini">
+              <h4><i class="fa-solid fa-comments"></i> Recent Questions</h4>
+              <div id="recent-questions"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── REMINDER DASHBOARD ── -->
+    <section class="section" id="reminders">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-tag"><i class="fa-solid fa-bell"></i> Reminders</div>
+          <h2>Medicine Dashboard</h2>
+          <p>Track and manage all your medicine schedules in one place</p>
+        </div>
+
+        <!-- Today Overview -->
+        <div class="today-strip">
+          <div class="today-card">
+            <i class="fa-solid fa-sun"></i>
+            <div>
+              <p>Morning</p>
+              <span id="morning-count">0 medicines</span>
+            </div>
+          </div>
+          <div class="today-card">
+            <i class="fa-solid fa-cloud-sun"></i>
+            <div>
+              <p>Afternoon</p>
+              <span id="afternoon-count">0 medicine</span>
+            </div>
+          </div>
+          <div class="today-card">
+            <i class="fa-solid fa-moon"></i>
+            <div>
+              <p>Night</p>
+              <span id="night-count">0 medicines</span>
+            </div>
+          </div>
+          <div class="today-card today-card-progress">
+            <div class="progress-circle" id="progress-circle">
+              <svg viewBox="0 0 36 36">
+                <path class="circle-bg"
+                  d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" />
+                <path class="circle-fill" id="circle-fill"
+                  d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"
+                  stroke-dasharray="0, 100" />
+              </svg>
+              <span id="progress-pct">0%</span>
+            </div>
+            <p>Today's Progress</p>
+          </div>
+        </div>
+
+        <!-- Add Reminder -->
+        <div class="add-reminder-card">
+          <h3><i class="fa-solid fa-plus-circle"></i> Add New Reminder</h3>
+          <div class="reminder-form">
+            <input type="text" id="med-name" placeholder="Medicine name" class="form-input" />
+            <input type="text" id="med-dose" placeholder="Dosage (e.g. 500mg)" class="form-input" />
+            <select id="med-time" class="form-input">
+              <option value="">Select time</option>
+              <option value="Morning">Morning (8:00 AM)</option>
+              <option value="Afternoon">Afternoon (1:00 PM)</option>
+              <option value="Evening">Evening (6:00 PM)</option>
+              <option value="Night">Night (9:00 PM)</option>
+            </select>
+            <select id="med-meal" class="form-input">
+              <option value="After food">After food</option>
+              <option value="Before food">Before food</option>
+              <option value="With food">With food</option>
+            </select>
+            <button class="btn btn-primary" id="add-reminder-btn"><i class="fa-solid fa-plus"></i> Add</button>
+          </div>
+        </div>
+
+        <!-- Reminder List -->
+        <div class="reminders-container" id="reminders-container">
+          <!-- populated by JS -->
+        </div>
+      </div>
+    </section>
+
+    <!-- ── HISTORY ── -->
+    <section class="section section-alt" id="history">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-tag"><i class="fa-solid fa-clock-rotate-left"></i> History</div>
+          <h2>Prescription History</h2>
+          <p>All your past prescriptions, safely stored and easy to access</p>
+        </div>
+        <div class="history-toolbar">
+          <div class="search-box">
+            <i class="fa-solid fa-search"></i>
+            <input type="text" id="history-search" placeholder="Search prescriptions..." />
+          </div>
+          <button class="btn btn-outline btn-sm" id="clear-history-btn"><i class="fa-solid fa-trash"></i> Clear
+            All</button>
+        </div>
+        <div class="history-grid" id="history-grid">
+          <!-- populated by JS -->
+        </div>
+        <div class="history-empty hidden" id="history-empty">
+          <i class="fa-solid fa-folder-open"></i>
+          <p>No prescriptions yet. Upload one to get started!</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── ELDERLY MODE TOGGLE ── -->
+    <div class="elderly-fab" id="elderly-fab" title="Toggle Elderly-Friendly Mode">
+      <i class="fa-solid fa-universal-access"></i>
+    </div>
+
+    <!-- ── TOAST ── -->
+    <div class="toast-container" id="toast-container"></div>
+
+  </main>
+
+  <!-- ── FOOTER ── -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <div class="logo">
+          <div class="logo-icon"><i class="fa-solid fa-leaf"></i><i class="fa-solid fa-plus logo-plus"></i></div>
+          <span class="logo-text">Aarogya<span class="logo-ai">AI</span></span>
+        </div>
+        <p>Empowering rural healthcare through artificial intelligence</p>
+      </div>
+      <div class="footer-links">
+        <p>Made with <i class="fa-solid fa-heart text-red"></i> for rural India</p>
+        <p class="footer-copy">&copy; 2025 AarogyaAI. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
